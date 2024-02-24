@@ -6,3 +6,8 @@ npx shadcn-ui@latest init komponenty shadcn
 https://ui.shadcn.com/docs/components/accordion
 //---------------------------------------------//
 https://lucide.dev/icons/ icons
+
+//---------------------------------------------//
+Dark mode with shadui
+npm install next-themes
+npx shadcn-ui@latest add dropdown-menu
