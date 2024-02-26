@@ -60,7 +60,7 @@ model Hotel{
     soundProofed Boolean @default(false)
 
     Hotel Hotel? @relation(fields: [hotelId], references: [id], onDelete: Cascade)
-    hotelId String
+    hotelId String  @db.ObjectId
 
     Booking Booking[]
 
@@ -83,7 +83,7 @@ model Hotel{
     bookedAt DateTime @default(now())
     
     Hotel Hotel? @relation(fields: [hotelId], references: [id])
-    hotelId String
+    hotelId String  @db.ObjectId
     Room Room? @relation(fields: [roomlId], references: [id])
-    roomlId String
+    roomlId String  @db.ObjectId
   }
